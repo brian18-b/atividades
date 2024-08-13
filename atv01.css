@@ -1,0 +1,98 @@
+*{
+	margin: 0; /*Zerei as margins para remove qualquer espaçamento nas bordas dos containers*/
+	padding: 0; /*Fiz o mesmo para o padding*/
+	font-family: 'Segoe UI'; /*Faltou aspas no nome da font*/
+}
+
+body{
+	widows: 100vw;
+	height: 100vh;
+	display: flex;
+	background-color: #373435;
+}
+
+h1{
+	color: #ffffff;
+}
+
+h3{
+	color: #ffffff;
+}
+
+
+.main-left{
+	width: 20%; /*Alterei o width para 20% (era o que deveria ter sido feito originalmente)*/
+	height: 100%; /*Alterei o height para 100%*/
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-color: #cc4b2c;
+}
+
+/*Alterei as propriedades para pegar os links <a> dentro da class 'links'*/
+.links > a{
+	color: #ffffff;
+	/*Removi a margin-left*/
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.links > a:hover{
+	font-weight: 500;
+}
+
+.links{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+/*OBS IMPORTANTE: main-right estava digitado errado, por isso algumas propriedades não estavam sendo aplicadas*/
+.main-right{
+	width: 80%; /*Alterei o width para 80% para completar 100% somado aos 20% do width do main-left*/
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.main-right > button{
+	width: 200px;
+	height: 50px;
+	background-color: #cc4b2c;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 20px;
+	border-style: none;
+}
+
+.main-right > h1{
+	text-justify: center;
+}
+
+
+.perfil{
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	border: 3px solid white;
+	justify-content: center;
+	background-image: url(https://c.wallhere.com/photos/c3/6b/Moon_Knight_Marvel_Cinematic_Universe_Marvel_Comics_MCU_Oscar_Isaac_series_superhero-2182029.jpg!d);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.perfil > h1{
+	color: #ffffff;
+}
+
+.perfil > h3{
+	color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+}
+
+
